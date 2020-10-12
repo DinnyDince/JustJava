@@ -27,7 +27,9 @@ int quantity = 0;
     }
 
     public void submitOrder(View view) {
-        String priceMessage = "Free";
+        int price = quantity * 5000;
+        String priceMessage = "Total pembelian Rp " + price;
+        priceMessage = priceMessage + "\nTerimakasih!";
         displayMessage(priceMessage);
     }
 
